@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8117A00A2466DFC50082033C /* ArraySizeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117A0092466DFC50082033C /* ArraySizeSelection.swift */; };
 		81809E0E2466D3130012B916 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81809E0D2466D3130012B916 /* Support.swift */; };
 		81809E102466D3350012B916 /* SortAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81809E0F2466D3350012B916 /* SortAlgorithms.swift */; };
 		81809E122466DDD10012B916 /* AlgorithmSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81809E112466DDD10012B916 /* AlgorithmSelection.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8117A0092466DFC50082033C /* ArraySizeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySizeSelection.swift; sourceTree = "<group>"; };
 		81809E0D2466D3130012B916 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		81809E0F2466D3350012B916 /* SortAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithms.swift; sourceTree = "<group>"; };
 		81809E112466DDD10012B916 /* AlgorithmSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmSelection.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				81809E0D2466D3130012B916 /* Support.swift */,
 				81809E0F2466D3350012B916 /* SortAlgorithms.swift */,
 				81809E132466DDE40012B916 /* ArrayCharacteristicsSelection.swift */,
+				8117A0092466DFC50082033C /* ArraySizeSelection.swift */,
 			);
 			path = SortRace;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				81809E142466DDE40012B916 /* ArrayCharacteristicsSelection.swift in Sources */,
 				81809E102466D3350012B916 /* SortAlgorithms.swift in Sources */,
 				81809E0E2466D3130012B916 /* Support.swift in Sources */,
+				8117A00A2466DFC50082033C /* ArraySizeSelection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

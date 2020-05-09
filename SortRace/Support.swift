@@ -15,5 +15,9 @@ func sortRace() {
 
     // Get the type of array data to work with
     let arrayDataType = ArrayCharacteristic(rawValue: determineDesiredArrayType())
-        
+
+    // Get the size of the array data to work with
+    let arraySize = ArraySize(rawValue: determineDesiredArraySize())
+
+    
 }
