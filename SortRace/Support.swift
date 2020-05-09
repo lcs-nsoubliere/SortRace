@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum SortAlgorithm: String {
+enum SortAlgorithm: Int {
     
-    case bubbleSort = "Bubble Sort"
-    case insertionSort = "Insertion Sort"
-    case selectionSort = "Selection Sort"
+    case bubbleSort = 1
+    case insertionSort = 2
+    case selectionSort = 3
     
     static var lowestValue: Int {
         get {
@@ -28,6 +28,21 @@ enum SortAlgorithm: String {
 
 }
 
+func nameSortAlgorithm(algorithm: SortAlgorithm) -> String {
+    
+    switch algorithm {
+    case .bubbleSort:
+        return "Bubble Sort"
+    case .insertionSort:
+        return "Insertion Sort"
+    case .selectionSort:
+        return "Selection Sort"
+    default:
+        break
+    }
+    
+}
+
 func determineDesiredSortAlgorithm() -> Int {
     
     // The response to return
@@ -38,9 +53,9 @@ func determineDesiredSortAlgorithm() -> Int {
         
         // Ask the question
         print("What sort algorithm do you want to test?\n")
-        print("1 - \(SortAlgorithm.bubbleSort.rawValue)")
-        print("2 - \(SortAlgorithm.insertionSort.rawValue)")
-        print("3 - \(SortAlgorithm.selectionSort.rawValue)")
+        print("\(SortAlgorithm.bubbleSort.rawValue) - \(nameSortAlgorithm(algorithm: SortAlgorithm.bubbleSort))")
+        print("\(SortAlgorithm.insertionSort.rawValue) - \(nameSortAlgorithm(algorithm: SortAlgorithm.insertionSort))")
+        print("\(SortAlgorithm.selectionSort.rawValue) - \(nameSortAlgorithm(algorithm: SortAlgorithm.selectionSort))")
         print("\nEnter your selection: ", terminator: "")
         
         // Get the initial response
@@ -79,6 +94,6 @@ func determineDesiredSortAlgorithm() -> Int {
 
 func sortRace() {
 
-    determineDesiredSortAlgorithm()
-    
+    let algorithm = SortAlgorithm(rawValue: determineDesiredSortAlgorithm())
+        
 }
