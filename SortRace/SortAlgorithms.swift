@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  SortAlgorithms.swift
 //  SortRace
 //
 //  Created by Russell Gordon on 2020-05-09.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-
-// Start a sort race
-sortRace()
