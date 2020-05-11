@@ -13,6 +13,7 @@
 		81809E142466DDE40012B916 /* ArrayCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81809E132466DDE40012B916 /* ArrayCharacteristic.swift */; };
 		81A264132469BE4200644A1A /* MenuDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A264122469BE4200644A1A /* MenuDisplayable.swift */; };
 		81A2641B2469D22000644A1A /* TrialCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2641A2469D22000644A1A /* TrialCount.swift */; };
+		81A2641D2469D64400644A1A /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2641C2469D64400644A1A /* Race.swift */; };
 		81FB43E72466D077003D2940 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB43E62466D077003D2940 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		81809E132466DDE40012B916 /* ArrayCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCharacteristic.swift; sourceTree = "<group>"; };
 		81A264122469BE4200644A1A /* MenuDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDisplayable.swift; sourceTree = "<group>"; };
 		81A2641A2469D22000644A1A /* TrialCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialCount.swift; sourceTree = "<group>"; };
+		81A2641C2469D64400644A1A /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		81FB43E32466D077003D2940 /* SortRace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortRace; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FB43E62466D077003D2940 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 			children = (
 				81FB43E62466D077003D2940 /* main.swift */,
 				81809E0D2466D3130012B916 /* Support.swift */,
+				81A2641C2469D64400644A1A /* Race.swift */,
 				81A264122469BE4200644A1A /* MenuDisplayable.swift */,
 				81809E112466DDD10012B916 /* SortAlgorithm.swift */,
 				81809E132466DDE40012B916 /* ArrayCharacteristic.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A2641D2469D64400644A1A /* Race.swift in Sources */,
 				81809E122466DDD10012B916 /* SortAlgorithm.swift in Sources */,
 				81FB43E72466D077003D2940 /* main.swift in Sources */,
 				81A264132469BE4200644A1A /* MenuDisplayable.swift in Sources */,

@@ -19,11 +19,11 @@ enum ArraySize: Int, CustomStringConvertible, CaseIterable, MenuDisplayable {
     var description: String {
         switch self {
         case .oneThousand:
-            return "1,000"
+            return "1000"
         case .tenThousand:
-            return "10,000"
+            return "10000"
         case .oneHundredThousand:
-            return "100,000"
+            return "100000"
         }
     }
     

@@ -28,6 +28,11 @@ func sortRace() {
 
     // Get the number of trials to perform
     let trials = getTrialCountSelection()
-
+    
+    // Run the race with selected parameters
+    race(algorithm: algorithm,
+         valuesProfile: arrayValueCharacteristics,
+         size: arraySize,
+         trials: trials)
 
 }
