@@ -53,6 +53,8 @@ func race(algorithm: SortAlgorithm, valuesProfile: ArrayCharacteristic, size: Ar
         switch algorithm {
         case .bubbleSort:
             bubbleSort(dataSet: &values)
+        case .insertionSort:
+            insertionSort(dataSet: &values)
         default:
             break
         }
