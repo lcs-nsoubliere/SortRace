@@ -18,6 +18,16 @@ func sortRace() {
 
     // Get the size of the array data to work with
     let arraySize = getArraySizeSelection()
-
     
+    // Report on selections made
+    print("\nYOUR SELECTIONS")
+    print("---------------")
+    print("Algorithm: \t\t\t\t\(algorithm.description)")
+    print("Array values will be: \t\(arrayValueCharacteristics.description)")
+    print("Array size will be: \t\(arraySize.description)")
+
+    // Get the number of trials to perform
+    let trials = getTrialCountSelection()
+
+
 }
