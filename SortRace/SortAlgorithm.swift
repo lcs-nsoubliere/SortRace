@@ -11,19 +11,19 @@ import Foundation
 enum SortAlgorithm: Int, CustomStringConvertible, CaseIterable, MenuDisplayable {
     
     case bubbleSort = 1
-    case insertionSort = 2
-    case selectionSort = 3
-    
+    case selectionSort = 2
+    case insertionSort = 3
+
     // This computed property provides conformance to the CustomStringConvertible protocol
     // Basically, that each option in the enumeration also provides a text-based description of that option
     var description: String {
         switch self {
         case .bubbleSort:
             return "Bubble Sort"
-        case .insertionSort:
-            return "Insertion Sort"
         case .selectionSort:
             return "Selection Sort"
+        case .insertionSort:
+            return "Insertion Sort"
         }
     }
     

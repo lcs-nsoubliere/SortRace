@@ -16,6 +16,7 @@
 		81A2641D2469D64400644A1A /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2641C2469D64400644A1A /* Race.swift */; };
 		81A2641F2469E6A700644A1A /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2641E2469E6A700644A1A /* BubbleSort.swift */; };
 		81A264232469EEA000644A1A /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A264222469EEA000644A1A /* InsertionSort.swift */; };
+		81A264252469F13200644A1A /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A264242469F13200644A1A /* SelectionSort.swift */; };
 		81FB43E72466D077003D2940 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB43E62466D077003D2940 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		81A2641C2469D64400644A1A /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		81A2641E2469E6A700644A1A /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		81A264222469EEA000644A1A /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		81A264242469F13200644A1A /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		81FB43E32466D077003D2940 /* SortRace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortRace; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FB43E62466D077003D2940 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				8117A0092466DFC50082033C /* ArraySize.swift */,
 				81A2641A2469D22000644A1A /* TrialCount.swift */,
 				81A2641E2469E6A700644A1A /* BubbleSort.swift */,
+				81A264242469F13200644A1A /* SelectionSort.swift */,
 				81A264222469EEA000644A1A /* InsertionSort.swift */,
 			);
 			path = SortRace;
@@ -151,6 +154,7 @@
 				81A264232469EEA000644A1A /* InsertionSort.swift in Sources */,
 				81809E122466DDD10012B916 /* SortAlgorithm.swift in Sources */,
 				81FB43E72466D077003D2940 /* main.swift in Sources */,
+				81A264252469F13200644A1A /* SelectionSort.swift in Sources */,
 				81A264132469BE4200644A1A /* MenuDisplayable.swift in Sources */,
 				81809E142466DDE40012B916 /* ArrayCharacteristic.swift in Sources */,
 				81809E0E2466D3130012B916 /* Support.swift in Sources */,
