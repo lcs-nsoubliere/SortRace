@@ -13,13 +13,14 @@ func bubbleSort(dataSet: inout [Int]) {
     // Loop through the entire array "n" times
     // (however many times there are elements in the array)
     var swapOccured = true
+    var sortedValues = 0    // Tracks how many values have been floated to the end of the array
     while swapOccured {
 
         // Starting a new pass, so reset swap flag
         swapOccured = false
         
         // Pass through the array to float the highest number to the end
-        for j in 0..<dataSet.count - 1 {
+        for j in 0..<dataSet.count - sortedValues - 1 {
             
             // Compare left value to right value
             if dataSet[j] > dataSet[j + 1] {
@@ -31,6 +32,9 @@ func bubbleSort(dataSet: inout [Int]) {
             }
             
         }
+        
+        // Increase count of sorted values
+        sortedValues += 1
 
 //        // DEBUG: Print the array after n passes
 //        print("Array after pass \(i + 1):")
