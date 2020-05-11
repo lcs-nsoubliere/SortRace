@@ -11,13 +11,13 @@ import Foundation
 func sortRace() {
 
     // Get the desired algorithm
-    let algorithm = SortAlgorithm(rawValue: determineDesiredSortAlgorithm())
+    let algorithm = getSortAlgorithmSelection()
 
-    // Get the type of array data to work with
-    let arrayDataType = ArrayCharacteristic(rawValue: determineDesiredArrayType())
+    // What should array values look like?
+    let arrayValueCharacteristics = getArrayCharacteristicSelection()
 
     // Get the size of the array data to work with
-    let arraySize = ArraySize(rawValue: determineDesiredArraySize())
+    let arraySize = getArraySizeSelection()
 
     
 }
