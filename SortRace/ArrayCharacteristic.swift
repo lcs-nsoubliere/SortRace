@@ -37,56 +37,24 @@ enum ArrayCharacteristic: Int, CustomStringConvertible, CaseIterable, MenuDispla
     
 }
 
-func getArrayCharacteristicSelection() -> ArrayCharacteristic {
-
-    // The response to return
-    var validResponse = 0
-
-    // Loop until the response is in the expected range
-    while validResponse == 0 {
-
-        // Show the prompt
-        print("\n\(ArrayCharacteristic.prompt)\n")
+class ArrayCharacteristicMenu: Menu {
+    
+    init() {
         
-        // Show the possible options
-        for characteristic in ArrayCharacteristic.allCases {
-            print("\(characteristic.rawValue) - \(characteristic.description)")
+        // Create arrays to store menu options
+        var selections: [Int] = []
+        var descriptions: [String] = []
+        
+        // Populate arrays
+        for aCase in ArrayCharacteristic.allCases {
+            selections.append(aCase.rawValue)
+            descriptions.append(aCase.description)
         }
-        print("\nEnter your selection: ", terminator: "")
-
-        // Get the initial response
-        guard let response = readLine() else {
-
-            // If no response given, loop and ask again
-            print("\nPlease enter a selection.")
-            continue
-            
-        }
-
-        // Convert to integer
-        guard let integerResponse = Int(response) else {
-
-            // If response cannot be made into an integer, ask again
-            print("\nPlease enter an integer.")
-            continue
-            
-        }
-
-        // Check that integer is in desired range
-        guard integerResponse >= ArrayCharacteristic.allCases.first!.rawValue, integerResponse <= ArrayCharacteristic.allCases.last!.rawValue else {
-
-            // If response is not in desired range, ask again
-            print("\nPlease enter a valid selection.")
-            continue
-            
-        }
-
-        // If we've made it here, the response is one of the enumeration types
-        validResponse = integerResponse
-
+        
+        // Pass populated arrays to superclass
+        super.init(selections: selections,
+                   descriptions: descriptions,
+                   prompt: ArrayCharacteristic.prompt)
     }
-
-    // Return the response
-    return ArrayCharacteristic(rawValue: validResponse)!
-
+    
 }

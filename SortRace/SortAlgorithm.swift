@@ -48,7 +48,7 @@ class AlgorithmMenu: Menu {
             descriptions.append(aCase.description)
         }
         
-        // Pass populated arrays to super class
+        // Pass populated arrays to superclass
         super.init(selections: selections,
                    descriptions: descriptions,
                    prompt: SortAlgorithm.prompt)

@@ -16,11 +16,17 @@ func sortRace() {
     // Get the desired algorithm
     let algorithm = SortAlgorithm(rawValue: algorithmMenu.displayMenu())!
 
+    // Create a menu to allow user to decide how array should be populated
+    let arrayValueCharacteristicsMenu = ArrayCharacteristicMenu()
+
     // What should array values look like?
-    let arrayValueCharacteristics = getArrayCharacteristicSelection()
+    let arrayValueCharacteristics = ArrayCharacteristic(rawValue: arrayValueCharacteristicsMenu.displayMenu())!
+
+    // Create a menu to allow for array size selection
+    let arraySizeSelectionMenu = ArraySizeMenu()
 
     // Get the size of the array data to work with
-    let arraySize = getArraySizeSelection()
+    let arraySize = ArraySize(rawValue: arraySizeSelectionMenu.displayMenu())!
     
     // Report on selections made
     print("\nYOUR SELECTIONS")
@@ -29,8 +35,11 @@ func sortRace() {
     print("Array values will be: \t\(arrayValueCharacteristics.description)")
     print("Array size will be: \t\(arraySize.description)")
 
+    // Create a menu to allow for selection of how many trials to perform
+    let trialCountSelectionMenu = TrialCountMenu()
+
     // Get the number of trials to perform
-    let trials = getTrialCountSelection()
+    let trials = TrialCount(rawValue: trialCountSelectionMenu.displayMenu())!
     
     // Run the race with selected parameters
     race(algorithm: algorithm,

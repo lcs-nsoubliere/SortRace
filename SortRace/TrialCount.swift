@@ -40,56 +40,25 @@ enum TrialCount: Int, CustomStringConvertible, CaseIterable, MenuDisplayable {
     
 }
 
-func getTrialCountSelection() -> TrialCount {
 
-    // The response to return
-    var validResponse = 0
-
-    // Loop until the response is in the expected range
-    while validResponse == 0 {
-
-        // Show the prompt
-        print("\n\(TrialCount.prompt)\n")
+class TrialCountMenu: Menu {
+    
+    init() {
         
-        // Show the possible options
-        for trials in TrialCount.allCases {
-            print("\(trials.rawValue) - \(trials.description)")
+        // Create arrays to store menu options
+        var selections: [Int] = []
+        var descriptions: [String] = []
+        
+        // Populate arrays
+        for aCase in TrialCount.allCases {
+            selections.append(aCase.rawValue)
+            descriptions.append(aCase.description)
         }
-        print("\nEnter your selection: ", terminator: "")
-
-        // Get the initial response
-        guard let response = readLine() else {
-
-            // If no response given, loop and ask again
-            print("\nPlease enter a selection.")
-            continue
-            
-        }
-
-        // Convert to integer
-        guard let integerResponse = Int(response) else {
-
-            // If response cannot be made into an integer, ask again
-            print("\nPlease enter an integer.")
-            continue
-            
-        }
-
-        // Check that integer is in desired range
-        guard integerResponse >= TrialCount.allCases.first!.rawValue, integerResponse <= TrialCount.allCases.last!.rawValue else {
-
-            // If response is not in desired range, ask again
-            print("\nPlease enter a valid selection.")
-            continue
-            
-        }
-
-        // If we've made it here, the response is one of the enumeration types
-        validResponse = integerResponse
-
+        
+        // Pass populated arrays to superclass
+        super.init(selections: selections,
+                   descriptions: descriptions,
+                   prompt: TrialCount.prompt)
     }
-
-    // Return the response
-    return TrialCount(rawValue: validResponse)!
-
+    
 }
