@@ -57,8 +57,6 @@ func race(algorithm: SortAlgorithm, valuesProfile: ArrayCharacteristic, size: Ar
             selectionSort(dataSet: &values)
         case .insertionSort:
             insertionSort(dataSet: &values)
-        default:
-            break
         }
 
         // Time in seconds since the epoch

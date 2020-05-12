@@ -34,56 +34,24 @@ enum SortAlgorithm: Int, CustomStringConvertible, CaseIterable, MenuDisplayable 
 
 }
 
-func getSortAlgorithmSelection() -> SortAlgorithm {
-
-    // The response to return
-    var validResponse = 0
-
-    // Loop until the response is in the expected range
-    while validResponse == 0 {
-
-        // Show the prompt
-        print("\n\(SortAlgorithm.prompt)\n")
+class AlgorithmMenu: Menu {
+    
+    init() {
         
-        // Show the possible options
-        for algorithm in SortAlgorithm.allCases {
-            print("\(algorithm.rawValue) - \(algorithm.description)")
+        // Create arrays to store menu options
+        var selections: [Int] = []
+        var descriptions: [String] = []
+        
+        // Populate arrays
+        for aCase in SortAlgorithm.allCases {
+            selections.append(aCase.rawValue)
+            descriptions.append(aCase.description)
         }
-        print("\nEnter your selection: ", terminator: "")
-
-        // Get the initial response
-        guard let response = readLine() else {
-
-            // If no response given, loop and ask again
-            print("\nPlease enter a selection.")
-            continue
-            
-        }
-
-        // Convert to integer
-        guard let integerResponse = Int(response) else {
-
-            // If response cannot be made into an integer, ask again
-            print("\nPlease enter an integer.")
-            continue
-            
-        }
-
-        // Check that integer is in desired range
-        guard integerResponse >= SortAlgorithm.allCases.first!.rawValue, integerResponse <= SortAlgorithm.allCases.last!.rawValue else {
-
-            // If response is not in desired range, ask again
-            print("\nPlease enter a valid selection.")
-            continue
-            
-        }
-
-        // If we've made it here, the response is one of the enumeration types
-        validResponse = integerResponse
-
+        
+        // Pass populated arrays to super class
+        super.init(selections: selections,
+                   descriptions: descriptions,
+                   prompt: SortAlgorithm.prompt)
     }
-
-    // Return the response
-    return SortAlgorithm(rawValue: validResponse)!
-
+    
 }

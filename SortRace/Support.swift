@@ -9,9 +9,12 @@
 import Foundation
 
 func sortRace() {
+    
+    // Create a menu from the available algorithms
+    let algorithmMenu = AlgorithmMenu()
 
     // Get the desired algorithm
-    let algorithm = getSortAlgorithmSelection()
+    let algorithm = SortAlgorithm(rawValue: algorithmMenu.displayMenu())!
 
     // What should array values look like?
     let arrayValueCharacteristics = getArrayCharacteristicSelection()
