@@ -8,6 +8,8 @@
 
 import Foundation
 
+// An abstraction used to display a menu based on an enumeration.
+// Should not be directly instantiated; instead create a subclass based upon the enumeration you wish to display a menu for
 class Menu {
     
     // Stores the valid selections for this menu

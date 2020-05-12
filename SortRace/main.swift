@@ -9,4 +9,4 @@
 import Foundation
 
 // Start a sort race
-sortRace()
+setUpSortRace()
